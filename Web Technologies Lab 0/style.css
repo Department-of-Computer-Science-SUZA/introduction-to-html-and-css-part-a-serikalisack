@@ -1,0 +1,145 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  color: #1e90ff;
+  text-align: center;
+}
+
+/* Navigation Bar Styling */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Mobile-specific styles */
+#hamburger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Form styling */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 2px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+legend {
+  font-weight: bold;
+  color: #2e8b57;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e6e43;
+  cursor: pointer;
+}
+
+/* Responsive design */
+
+/* Media Queries for devices with width < 600px */
+@media (max-width: 600px) {
+  /* Hide the navigation links by default */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Show the hamburger menu */
+  #hamburger-menu {
+    display: block;
+  }
+
+  /* When the navbar has the "show" class, display it */
+  nav.show ul {
+    display: block;
+  }
+  
+  /* Adjust form padding */
+  form {
+    padding: 10px;
+  }
+
+  /* Adjust button size for mobile */
+  button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  /* Adjust heading size */
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Stack form fieldset elements vertically */
+  fieldset {
+    padding: 10px;
+  }
+}
